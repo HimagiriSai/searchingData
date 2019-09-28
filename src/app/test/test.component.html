@@ -1,0 +1,11 @@
+
+<input type="text" name="search" class="search" id="userNameFilter">
+
+<div *ngIf="userNames.length > 0">
+  <ul *ngFor = "let name of userNames">
+    <li>{{name}}</li>
+  </ul>
+</div>
+<div *ngIf="userNames.length == 0">
+  <p>No Results Found</p>
+</div>
